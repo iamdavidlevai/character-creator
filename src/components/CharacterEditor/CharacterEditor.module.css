@@ -30,9 +30,27 @@
   top: 15%;
   left: 60%;
   min-height: 500px;
-  bottom: 5%;
+  bottom: 15%;
 }
 
 .controlColumn {
   width: 50%;
+}
+
+@media screen and (max-width: 540px) {
+  .characterWrapper {
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    min-height: 500px;
+    /* bottom: 5%; */
+  }
+  .header {
+    padding-bottom: 64px;
+  }
+  .controlColumn {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+  }
 }
